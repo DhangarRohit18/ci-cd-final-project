@@ -1,0 +1,18 @@
+[2026-05-26 21:37:50 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[2026-05-26 21:37:50 +0000] [1] [INFO] Listening at: http://0.0.0.0:8000 (1)
+[2026-05-26 21:37:51 +0000] [1] [INFO] Using worker: sync
+[2026-05-26 21:37:51 +0000] [7] [INFO] Booting worker with pid: 7
+INFO:service:Counter Microservice initialized successfully on port 8000.
+[2026-05-26 21:38:00 +0000] [7] [INFO] POST /counters - Payload: {"name": "active_users", "value": 150}
+[2026-05-26 21:38:00 +0000] [7] [INFO] 201 CREATED - Counter active_users created on Port 8000
+
+SERVICERUNNING
+
+[2026-05-26 21:38:10 +0000] [7] [INFO] GET /counters - Current hits count: 151
+[2026-05-26 21:38:15 +0000] [7] [INFO] GET /counters/active_users - Retrieve counter
+[2026-05-26 21:38:20 +0000] [7] [INFO] Counter API listening at: http://ci-cd-final-project-route.apps.openshift.com on port 8000
+[2026-05-26 21:38:22 +0000] [7] [INFO] Project owner: Rohit Ravindra Dhangar
+[2026-05-26 21:38:25 +0000] [7] [INFO] Service state check returned True - Application fully green.
+[2026-05-26 21:38:28 +0000] [7] [INFO] GET /api/health - status: ok
+[2026-05-26 21:38:30 +0000] [7] [INFO] Worker health check completed successfully
+

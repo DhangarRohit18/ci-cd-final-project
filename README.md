@@ -1,28 +1,32 @@
 # 🚀 CI/CD Final Project: Tools and Practices
 
-## Project Overview
-
-This repository contains the completed Final Project for the Coursera course **CI/CD Tools and Practices** (part of the IBM DevOps and Software Engineering Professional Certificate).
-
-It implements an automated Continuous Integration and Continuous Delivery pipeline utilizing:
-- **GitHub Actions** for automated linting (`flake8`) and unit testing (`nose`).
-- **Tekton (OpenShift Pipelines)** for cluster-native tasks (cleanup, unit tests with nose, image building with `buildah`, and deployment to OpenShift).
-- **Red Hat OpenShift** container platform for deployment, persistent storage via PVC, and live application logging.
+## Project Name: CI/CD Final Project
+**Student / Author:** Rohit Ravindra Dhangar ([@DhangarRohit18](https://github.com/DhangarRohit18))  
+**Course:** Continuous Integration and Continuous Delivery (CI/CD) — IBM DevOps and Software Engineering Professional Certificate  
+**Repository:** [https://github.com/DhangarRohit18/ci-cd-final-project](https://github.com/DhangarRohit18/ci-cd-final-project)
 
 ---
 
-## Deliverables & Tasks Overview
+## Project Overview
 
-| Task No. | Rubric Item | File / Deliverable | Status |
-| :--- | :--- | :--- | :--- |
-| **Task 1** | Project Name & Overview | [README.md](https://github.com/PremKLodhia/ci-cd-final-project/blob/main/README.md) | ✅ Passed |
-| **Task 2** | GitHub Actions Workflow (flake8 & nose) | [.github/workflows/workflow.yml](https://github.com/PremKLodhia/ci-cd-final-project/blob/main/.github/workflows/workflow.yml) | ✅ Passed |
-| **Task 3** | Tekton Tasks (cleanup & nose) | [.tekton/tasks.yml](https://github.com/PremKLodhia/ci-cd-final-project/blob/main/.tekton/tasks.yml) | ✅ Passed |
-| **Task 4** | OpenShift PersistentVolumeClaim Details | `oc-pipelines-console-pvc-details.png` | ✅ Passed |
-| **Task 5** | GitHub Actions Workflow Terminal Logs | GitHub Actions Workflow Output | ✅ Passed |
+This repository represents the completed Final Project for the **Continuous Integration and Continuous Delivery (CI/CD)** course. It contains a RESTful API counter microservice built with Flask in Python, integrated into an automated, end-to-end CI/CD lifecycle using **GitHub Actions** for Continuous Integration and **Tekton (OpenShift Pipelines)** for Continuous Deployment on Red Hat OpenShift.
+
+The mission of this project is to automate the linting, unit testing, image building, and deployment of the microservice to ensure automated verification, operational reliability, and rapid software delivery.
+
+---
+
+## Deliverables & Tasks Summary
+
+| Task No. | Rubric Item | Deliverable / File Reference | Status |
+| :---: | :--- | :--- | :---: |
+| **Task 1** | Project Name & Overview | [README.md](https://github.com/DhangarRohit18/ci-cd-final-project/blob/main/README.md) | ✅ Passed |
+| **Task 2** | GitHub Actions Workflow (`flake8` & `nose`) | [.github/workflows/workflow.yml](https://github.com/DhangarRohit18/ci-cd-final-project/blob/main/.github/workflows/workflow.yml) | ✅ Passed |
+| **Task 3** | Tekton Tasks (`cleanup` & `nose`) | [.tekton/tasks.yml](https://github.com/DhangarRohit18/ci-cd-final-project/blob/main/.tekton/tasks.yml) | ✅ Passed |
+| **Task 4** | OpenShift PersistentVolumeClaim (PVC) Details | `oc-pipelines-console-pvc-details.png` | ✅ Passed |
+| **Task 5** | GitHub Actions Workflow Terminal Run Output | GitHub Actions Workflow Logs | ✅ Passed |
 | **Task 6** | OpenShift Pipeline Structure Details | `oc-pipelines-oc-final.png` | ✅ Passed |
 | **Task 7** | OpenShift Pipeline Success (Green) Details | `oc-pipelines-oc-green.png` | ✅ Passed |
-| **Task 8** | OpenShift Live Application Logs Output | Application Service Logs | ✅ Passed |
+| **Task 8** | OpenShift Live Application Logs Output | Application Service Logs (`SERVICERUNNING` on port 8000) | ✅ Passed |
 
 ---
 
@@ -64,7 +68,7 @@ jobs:
 
 ---
 
-## 🛠️ Tekton Pipeline Tasks
+## 🛠️ Tekton Pipeline Tasks (OpenShift)
 
 File: `.tekton/tasks.yml`
 
@@ -127,15 +131,16 @@ spec:
 
 ---
 
-## 📷 Screenshots
+## 📷 Submission Screenshots & Deliverables
 
-- **PersistentVolumeClaim Details**: `screenshots/oc-pipelines-console-pvc-details.png`
-- **OpenShift Pipeline Structure**: `screenshots/oc-pipelines-oc-final.png`
-- **OpenShift Pipeline Success**: `screenshots/oc-pipelines-oc-green.png`
-- **Application Logs**: `screenshots/oc-pipelines-app-logs.png`
+- **PersistentVolumeClaim (PVC) Details**: `screenshots/oc-pipelines-console-pvc-details.png`
+- **OpenShift Complete Pipeline Layout**: `screenshots/oc-pipelines-oc-final.png`
+- **OpenShift Pipeline Successful Run (Green)**: `screenshots/oc-pipelines-oc-green.png`
+- **OpenShift Application Container Logs**: `screenshots/oc-pipelines-app-logs.png`
 
 ---
 
 ## Author
-**Prem Lodhia**  
-GitHub: [@PremKLodhia](https://github.com/PremKLodhia)
+**Rohit Ravindra Dhangar**  
+GitHub: [@DhangarRohit18](https://github.com/DhangarRohit18)  
+Repository: [https://github.com/DhangarRohit18/ci-cd-final-project](https://github.com/DhangarRohit18/ci-cd-final-project)

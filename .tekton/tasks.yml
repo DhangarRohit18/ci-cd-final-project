@@ -33,6 +33,7 @@ kind: Task
 metadata:
   name: nose
 spec:
+  description: Run unit tests with nose on a python microservice
   workspaces:
     - name: source
   params:
